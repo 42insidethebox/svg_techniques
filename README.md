@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # SVG Techniques
 
 Reusable technical visual systems for modern web interfaces.
