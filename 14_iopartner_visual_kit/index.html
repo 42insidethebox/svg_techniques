@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14 — IOpartner Visual Kit</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 14</p>
+        <h1>IOpartner visual kit</h1>
+        <p>
+          Final production inventory for the IOpartner visual language: approved
+          SVG sources, web components, PNG exports, naming rules, usage states,
+          and integration checklist.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="light">Light</button>
+          <button class="control" data-group="theme" data-theme="dark">Dark</button>
+
+          <button class="control is-active" data-group="view" data-view="inventory">Inventory</button>
+          <button class="control" data-group="view" data-view="usage">Usage</button>
+          <button class="control" data-group="view" data-view="export">Export</button>
+        </div>
+      </section>
+
+      <section class="kit-panel" data-theme="light" data-view="inventory">
+        <div class="panel-label">
+          <strong>Production visual kit</strong>
+          <span data-view-subtitle>Approved assets · strict naming · reusable components</span>
+        </div>
+
+        <svg class="kit-stage" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 23 C26 9 72 9 92 25" />
+          <path class="ghost-route" d="M8 80 C28 94 72 94 92 78" />
+          <path class="ghost-route" d="M18 90 C31 64 51 42 78 17" />
+          <path class="ghost-route" d="M8 52 C24 38 45 34 63 38" />
+          <path class="kit-route route-a" d="M28 38 C40 30 54 30 66 38" />
+          <path class="kit-route route-b" d="M28 61 C40 70 54 70 66 61" />
+        </svg>
+
+        <aside class="kit-preview">
+          <p class="preview-kicker">Selected asset</p>
+          <h2 data-preview-title>Hero topology</h2>
+          <p data-preview-copy>
+            Primary technical hero visual used to communicate IOpartner as a
+            structured technical partner, not a generic website seller.
+          </p>
+
+          <div class="preview-visual">
+            <div class="visual-node node-left">
+              <span></span>
+              <strong>DNS</strong>
+            </div>
+            <div class="visual-node node-core">
+              <span></span>
+              <strong>API</strong>
+            </div>
+            <div class="visual-node node-right">
+              <span></span>
+              <strong>Ops</strong>
+            </div>
+          </div>
+
+          <div class="asset-filename">
+            <span></span>
+            <strong data-preview-file>hero_topology_primary.svg</strong>
+          </div>
+        </aside>
+
+        <div class="asset-grid">
+          <article class="asset-card is-active" data-category="hero" data-title="Hero topology" data-file="hero_topology_primary.svg" data-copy="Primary technical hero visual used to communicate IOpartner as a structured technical partner, not a generic website seller.">
+            <span class="asset-icon"></span>
+            <strong>Hero topology</strong>
+            <small>hero_topology_primary.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="systems" data-title="Systems architecture" data-file="systems_architecture_dark.svg" data-copy="Dark operational architecture visual for systems, infrastructure, monitoring, and technical continuity sections.">
+            <span class="asset-icon"></span>
+            <strong>Systems architecture</strong>
+            <small>systems_architecture_dark.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="decision" data-title="Decision map" data-file="decision_entry_map.svg" data-copy="Explains how a client chooses between standard deployment, technical consulting, and systems work.">
+            <span class="asset-icon"></span>
+            <strong>Decision map</strong>
+            <small>decision_entry_map.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="consulting" data-title="Consulting artifact" data-file="consulting_scope_artifact.svg" data-copy="Makes paid consulting tangible by showing scope, options, recommendation, and next step.">
+            <span class="asset-icon"></span>
+            <strong>Consulting artifact</strong>
+            <small>consulting_scope_artifact.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="standard" data-title="Standard deployment" data-file="deployment_standard_preview.svg" data-copy="Represents the fixed-scope website offer with browser previews, responsive layouts, and clear delivery scope.">
+            <span class="asset-icon"></span>
+            <strong>Standard deployment</strong>
+            <small>deployment_standard_preview.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="pricing" data-title="Pricing layers" data-file="pricing_offer_layers.svg" data-copy="Explains pricing as structured layers: standard, consulting, and systems rather than random offers.">
+            <span class="asset-icon"></span>
+            <strong>Pricing layers</strong>
+            <small>pricing_offer_layers.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="process" data-title="Process pipeline" data-file="process_delivery_pipeline.svg" data-copy="Shows the client journey from cadrage to deployment, launch, and follow-up.">
+            <span class="asset-icon"></span>
+            <strong>Process pipeline</strong>
+            <small>process_delivery_pipeline.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="ops" data-title="Ops health" data-file="ops_service_health.svg" data-copy="Premium operational layer visual for uptime, alerts, checks, backups, incidents, and continuity.">
+            <span class="asset-icon"></span>
+            <strong>Ops health</strong>
+            <small>ops_service_health.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="extensions" data-title="Extensions stack" data-file="extensions_module_stack.svg" data-copy="Shows optional operational add-ons without making the base website feel bloated.">
+            <span class="asset-icon"></span>
+            <strong>Extensions stack</strong>
+            <small>extensions_module_stack.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="icons" data-title="Trust icons" data-file="icon_facturation_suisse.svg" data-copy="Consistent small trust icons for pricing, footer, offer cards, PDFs, and brochures.">
+            <span class="asset-icon"></span>
+            <strong>Trust icons</strong>
+            <small>icon_facturation_suisse.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="nodes" data-title="Node library" data-file="node_api.svg" data-copy="Reusable technical node vocabulary for every topology, system, and extension diagram.">
+            <span class="asset-icon"></span>
+            <strong>Node library</strong>
+            <small>node_api.svg</small>
+          </article>
+
+          <article class="asset-card" data-category="backgrounds" data-title="Background fragments" data-file="bg_footer_topology.svg" data-copy="Low-opacity grids, route fragments, corner markers, and footer topology backgrounds.">
+            <span class="asset-icon"></span>
+            <strong>Background fragments</strong>
+            <small>bg_footer_topology.svg</small>
+          </article>
+        </div>
+
+        <div class="kit-rules">
+          <article>
+            <span></span>
+            <strong>Source</strong>
+            <small>HTML/CSS/SVG editable</small>
+          </article>
+
+          <article>
+            <span></span>
+            <strong>Export</strong>
+            <small>SVG first, PNG when needed</small>
+          </article>
+
+          <article>
+            <span></span>
+            <strong>Promote</strong>
+            <small>only approved assets</small>
+          </article>
+        </div>
+
+        <div class="usage-panel">
+          <article>
+            <strong>Website integration</strong>
+            <small>Astro component, inline SVG, responsive shell</small>
+          </article>
+          <article>
+            <strong>Proposal / print</strong>
+            <small>exported SVG or high-resolution PNG</small>
+          </article>
+          <article>
+            <strong>Client variants</strong>
+            <small>duplicate only after core asset is stable</small>
+          </article>
+        </div>
+
+        <div class="export-panel">
+          <article>
+            <strong>01 · inspect source</strong>
+            <small>labels editable, no broken layout, no unused variants</small>
+          </article>
+          <article>
+            <strong>02 · export SVG</strong>
+            <small>clean filename, no random inline IDs, reusable dimensions</small>
+          </article>
+          <article>
+            <strong>03 · export PNG</strong>
+            <small>only for print, social preview, or non-SVG contexts</small>
+          </article>
+          <article>
+            <strong>04 · document usage</strong>
+            <small>where used, light/dark version, mobile behavior</small>
+          </article>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

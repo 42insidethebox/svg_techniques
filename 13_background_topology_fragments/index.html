@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13 — Background Topology Fragments</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 13</p>
+        <h1>Background topology fragments</h1>
+        <p>
+          Reusable low-opacity grid textures, route fragments, corner markers,
+          node clusters, and footer atmospheres for IOpartner sections.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="light">Light</button>
+          <button class="control" data-group="theme" data-theme="dark">Dark</button>
+
+          <button class="control is-active" data-group="variant" data-variant="blueprint">Blueprint</button>
+          <button class="control" data-group="variant" data-variant="footer">Footer</button>
+          <button class="control" data-group="variant" data-variant="cluster">Cluster</button>
+          <button class="control" data-group="variant" data-variant="fragments">Fragments</button>
+
+          <button class="control is-active" data-group="density" data-density="calm">Calm</button>
+          <button class="control" data-group="density" data-density="dense">Dense</button>
+        </div>
+      </section>
+
+      <section class="fragment-panel" data-theme="light" data-variant="blueprint" data-density="calm">
+        <div class="panel-label">
+          <strong>Textures & fragments</strong>
+          <span data-variant-subtitle>Grid léger · arcs blueprint · cadre discret</span>
+        </div>
+
+        <svg class="fragment-stage" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="route route-primary route-a" d="M8 38 C24 18 48 14 66 24 C79 31 87 44 94 61" />
+          <path class="route route-primary route-b" d="M10 68 C28 51 48 45 66 50 C80 54 88 65 94 78" />
+          <path class="route route-secondary route-c" d="M14 22 C34 9 64 9 84 24" />
+          <path class="route route-secondary route-d" d="M18 88 C35 72 58 66 84 75" />
+          <path class="route route-secondary route-e" d="M30 92 C38 69 52 48 75 30" />
+          <path class="route route-secondary route-f" d="M4 52 C21 33 36 24 52 20" />
+
+          <path class="route route-fragment fragment-h-a" d="M10 28 H26" />
+          <path class="route route-fragment fragment-h-b" d="M74 18 H91" />
+          <path class="route route-fragment fragment-h-c" d="M72 84 H92" />
+          <path class="route route-fragment fragment-v-a" d="M18 56 V72" />
+          <path class="route route-fragment fragment-v-b" d="M86 34 V51" />
+
+          <circle class="route-dot dot-a" cx="28" cy="31" r="0.7" />
+          <circle class="route-dot dot-b" cx="58" cy="24" r="0.7" />
+          <circle class="route-dot dot-c" cx="78" cy="36" r="0.7" />
+          <circle class="route-dot muted dot-d" cx="38" cy="61" r="0.55" />
+          <circle class="route-dot muted dot-e" cx="70" cy="53" r="0.55" />
+        </svg>
+
+        <div class="node-cluster cluster-a">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="node-cluster cluster-b">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <article class="preview-card main-preview">
+          <p class="preview-kicker">Background preview</p>
+          <h2 data-preview-title>Blueprint texture</h2>
+          <p data-preview-copy>
+            A calm section background: subtle grid, soft route arcs, low-opacity
+            dots, corner markers, and no important information embedded in the texture.
+          </p>
+
+          <div class="preview-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </article>
+
+        <div class="fragment-library">
+          <article class="fragment-card is-active" data-fragment="grid">
+            <strong>Grid subtle</strong>
+            <small>bg_grid_subtle.svg</small>
+            <span class="mini-grid"></span>
+          </article>
+
+          <article class="fragment-card" data-fragment="routes">
+            <strong>Route arcs</strong>
+            <small>topology_fragment_routes.svg</small>
+            <span class="mini-route"></span>
+          </article>
+
+          <article class="fragment-card" data-fragment="corner">
+            <strong>Corner markers</strong>
+            <small>topology_fragment_corner.svg</small>
+            <span class="mini-corner"></span>
+          </article>
+
+          <article class="fragment-card" data-fragment="cluster">
+            <strong>Node cluster</strong>
+            <small>topology_fragment_cluster.svg</small>
+            <span class="mini-cluster">
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>
+          </article>
+        </div>
+
+        <div class="usage-strip">
+          <div>
+            <span></span>
+            <strong>Under 8%</strong>
+            <small>visual strength</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>SVG-first</strong>
+            <small>safe export</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Reusable</strong>
+            <small>hero, footer, cards</small>
+          </div>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

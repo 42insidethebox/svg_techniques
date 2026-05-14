@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 — Node Icon Library</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 12</p>
+        <h1>Node icon library</h1>
+        <p>
+          A normalized icon and node vocabulary for IOpartner diagrams: API,
+          DNS, VPS, CRM, backup, monitoring, automations, website, SSL, deploy,
+          database, forms, calendar, messaging, and security.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="light">Light</button>
+          <button class="control" data-group="theme" data-theme="dark">Dark</button>
+
+          <button class="control is-active" data-group="mode" data-mode="cards">Cards</button>
+          <button class="control" data-group="mode" data-mode="chips">Chips</button>
+          <button class="control" data-group="mode" data-mode="icons">Icons</button>
+
+          <button class="control is-active" data-group="filter" data-filter="all">All</button>
+          <button class="control" data-group="filter" data-filter="core">Core</button>
+          <button class="control" data-group="filter" data-filter="web">Web</button>
+          <button class="control" data-group="filter" data-filter="ops">Ops</button>
+        </div>
+      </section>
+
+      <section class="node-panel" data-theme="light" data-mode="cards" data-filter="all">
+        <div class="panel-label">
+          <strong>Bibliothèque de nodes</strong>
+          <span>24×24 SVG · stroke 1.75 · shell normalisé</span>
+        </div>
+
+        <svg class="node-background" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 23 C26 9 72 9 92 25" />
+          <path class="ghost-route" d="M8 80 C28 94 72 94 92 78" />
+          <path class="ghost-route" d="M18 90 C31 64 51 42 78 17" />
+          <path class="ghost-route" d="M8 52 C24 38 45 34 63 38" />
+        </svg>
+
+        <div class="library-grid">
+          <article class="node-card is-active" data-category="core" data-title="API" data-detail="Routes métier" data-asset="node_api.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 8l-4 4l4 4" />
+                <path d="M16 8l4 4l-4 4" />
+                <path d="M14 5l-4 14" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>API</strong>
+              <small>Routes métier</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="core" data-title="DNS" data-detail="Domaine & routage" data-asset="node_dns.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18Z" />
+                <path d="M12 3c2.4 2.5 3.4 5.4 3.4 9S14.4 18.5 12 21" />
+                <path d="M12 3c-2.4 2.5-3.4 5.4-3.4 9s1 6.5 3.4 9" />
+                <path d="M3.6 9h16.8M3.6 15h16.8" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>DNS</strong>
+              <small>Domaine & routage</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="core" data-title="VPS" data-detail="Hébergement" data-asset="node_vps.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 4h14v5H5Z" />
+                <path d="M5 15h14v5H5Z" />
+                <path d="M8 7h.01M8 18h.01" />
+                <path d="M11 7h5M11 18h5" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>VPS</strong>
+              <small>Hébergement</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="web" data-title="CRM" data-detail="Données clients" data-asset="node_crm.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 12a4 4 0 1 0-4-4a4 4 0 0 0 4 4Z" />
+                <path d="M5 20a7 7 0 0 1 14 0" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>CRM</strong>
+              <small>Données clients</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="ops" data-title="Backup" data-detail="Sauvegardes" data-asset="node_backup.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 5c4.4 0 8 1.3 8 3s-3.6 3-8 3s-8-1.3-8-3s3.6-3 8-3Z" />
+                <path d="M4 8v8c0 1.7 3.6 3 8 3s8-1.3 8-3V8" />
+                <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Backup</strong>
+              <small>Sauvegardes</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="ops" data-title="Monitoring" data-detail="Santé système" data-asset="node_monitoring.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 13h4l2-6l4 11l2-5h4" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Monitoring</strong>
+              <small>Santé système</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="ops" data-title="Automation" data-detail="Workflows métier" data-asset="node_automation.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+                <path d="M18 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+                <path d="M6 20a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+                <path d="M7.7 7l8.6 4M8 6h4a3 3 0 0 1 3 3v2M18 14v2a3 3 0 0 1-3 3h-4" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Automation</strong>
+              <small>Workflows métier</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="web" data-title="Website" data-detail="Site & contenu" data-asset="node_website.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 5h16v14H4Z" />
+                <path d="M4 9h16" />
+                <path d="M7 7h.01M10 7h.01" />
+                <path d="M8 13h8M8 16h5" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Website</strong>
+              <small>Site & contenu</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="core" data-title="SSL" data-detail="Certificat & sécurité" data-asset="node_ssl.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+                <path d="M5 10h14v10H5Z" />
+                <path d="M12 14v3" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>SSL</strong>
+              <small>Certificat & sécurité</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="core" data-title="Deploy" data-detail="Mise en ligne" data-asset="node_deploy.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v11" />
+                <path d="m7 8 5-5 5 5" />
+                <path d="M5 21h14" />
+                <path d="M7 17h10" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Deploy</strong>
+              <small>Mise en ligne</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="ops" data-title="Database" data-detail="Données structurées" data-asset="node_database.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 5c4.4 0 8 1.3 8 3s-3.6 3-8 3s-8-1.3-8-3s3.6-3 8-3Z" />
+                <path d="M4 8v4c0 1.7 3.6 3 8 3s8-1.3 8-3V8" />
+                <path d="M4 12v4c0 1.7 3.6 3 8 3s8-1.3 8-3v-4" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Database</strong>
+              <small>Données structurées</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="web" data-title="Forms" data-detail="Demandes cadrées" data-asset="node_forms.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 4h12v16H6Z" />
+                <path d="M9 8h6M9 12h6M9 16h3" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Forms</strong>
+              <small>Demandes cadrées</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="web" data-title="Calendar" data-detail="Rendez-vous" data-asset="node_calendar.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 5h14v15H5Z" />
+                <path d="M8 3v4M16 3v4M5 9h14" />
+                <path d="M8 13h3M13 13h3M8 16h3" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Calendar</strong>
+              <small>Rendez-vous</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="web" data-title="WhatsApp" data-detail="Contact direct" data-asset="node_whatsapp.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 18.5 4 20l1-3.3A8 8 0 1 1 7 18.5Z" />
+                <path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>WhatsApp</strong>
+              <small>Contact direct</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-category="core" data-title="Security" data-detail="Accès & protection" data-asset="node_security.svg">
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3 19 6v5c0 4.5-2.8 8.2-7 10-4.2-1.8-7-5.5-7-10V6Z" />
+                <path d="m9 12 2 2 4-5" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Security</strong>
+              <small>Accès & protection</small>
+            </span>
+          </article>
+        </div>
+
+        <aside class="node-inspector">
+          <p class="inspector-kicker">Selected node</p>
+          <h2 data-inspector-title>API</h2>
+          <p data-inspector-detail>Routes métier</p>
+
+          <div class="inspector-preview" data-preview>
+            <span class="node-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 8l-4 4l4 4" />
+                <path d="M16 8l4 4l-4 4" />
+                <path d="M14 5l-4 14" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="asset-name">
+            <span></span>
+            <strong data-inspector-asset>node_api.svg</strong>
+          </div>
+        </aside>
+
+        <div class="library-notes">
+          <div>
+            <span></span>
+            <strong>24×24 viewBox</strong>
+            <small>source stable</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>stroke 1.75</strong>
+            <small>poids homogène</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>shell unique</strong>
+            <small>cards, chips, icons</small>
+          </div>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

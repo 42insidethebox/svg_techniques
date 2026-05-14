@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09 — Ops Service Health</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 09</p>
+        <h1>Ops service health</h1>
+        <p>
+          A calm operational dashboard for continuity, monitoring, uptime,
+          backups, alerts, and post-launch technical support.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="dark">Dark</button>
+          <button class="control" data-group="theme" data-theme="light">Light</button>
+
+          <button class="control is-active" data-group="state" data-state="healthy">Healthy</button>
+          <button class="control" data-group="state" data-state="watch">Watch</button>
+          <button class="control" data-group="state" data-state="incident">Incident</button>
+        </div>
+      </section>
+
+      <section class="ops-panel" data-theme="dark" data-state="healthy">
+        <div class="panel-label">
+          <strong>Continuité technique</strong>
+          <span data-state-subtitle>Monitoring actif · services stables · sauvegardes récentes</span>
+        </div>
+
+        <svg class="ops-stage" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 24 C27 8 73 8 92 26" />
+          <path class="ghost-route" d="M8 80 C27 94 73 94 92 78" />
+          <path class="ghost-route" d="M19 92 C31 66 52 42 80 16" />
+          <path class="ghost-route" d="M8 52 C24 38 46 34 64 39" />
+
+          <g data-route-layer></g>
+        </svg>
+
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span class="metric-icon"></span>
+            <strong data-metric-services>12</strong>
+            <small>Services</small>
+          </article>
+
+          <article class="metric-card">
+            <span class="metric-icon"></span>
+            <strong data-metric-checks>48</strong>
+            <small>Checks</small>
+          </article>
+
+          <article class="metric-card metric-incidents">
+            <span class="metric-icon"></span>
+            <strong data-metric-incidents>0</strong>
+            <small>Incidents</small>
+          </article>
+
+          <article class="metric-card">
+            <span class="metric-icon"></span>
+            <strong data-metric-uptime>99.98%</strong>
+            <small>Uptime</small>
+          </article>
+        </div>
+
+        <article class="ops-node node-monitoring is-core" data-node="monitoring">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 13h4l2-6l4 11l2-5h4" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Monitoring</strong>
+            <small>Alertes & santé système</small>
+          </span>
+        </article>
+
+        <article class="ops-node node-website" data-node="website">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 5h16v14H4Z" />
+              <path d="M4 9h16" />
+              <path d="M8 13h8" />
+              <path d="M8 16h5" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Website</strong>
+            <small>Front public</small>
+          </span>
+        </article>
+
+        <article class="ops-node node-api" data-node="api">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 8l-4 4l4 4" />
+              <path d="M16 8l4 4l-4 4" />
+              <path d="M14 5l-4 14" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>API</strong>
+            <small>Routes métier</small>
+          </span>
+        </article>
+
+        <article class="ops-node node-backup" data-node="backup">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 5c4.4 0 8 1.3 8 3s-3.6 3-8 3s-8-1.3-8-3s3.6-3 8-3Z" />
+              <path d="M4 8v8c0 1.7 3.6 3 8 3s8-1.3 8-3V8" />
+              <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Backup</strong>
+            <small>Dernière sauvegarde</small>
+          </span>
+        </article>
+
+        <article class="ops-node node-alert" data-node="alert">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 9v4" />
+              <path d="M12 17h.01" />
+              <path d="M10.3 4.2 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0Z" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong data-alert-title>Alertes</strong>
+            <small data-alert-copy>Aucune action urgente</small>
+          </span>
+        </article>
+
+        <article class="health-table" data-node="health">
+          <div class="table-header">
+            <strong>Service health</strong>
+            <span data-health-label>stable</span>
+          </div>
+
+          <div class="status-row">
+            <span class="status-dot status-ok"></span>
+            <strong>DNS + SSL</strong>
+            <small>OK</small>
+          </div>
+
+          <div class="status-row">
+            <span class="status-dot status-ok"></span>
+            <strong>Website</strong>
+            <small>OK</small>
+          </div>
+
+          <div class="status-row">
+            <span class="status-dot status-watch"></span>
+            <strong>Forms</strong>
+            <small data-forms-status>watch</small>
+          </div>
+
+          <div class="status-row">
+            <span class="status-dot status-ok"></span>
+            <strong>Backup</strong>
+            <small>recent</small>
+          </div>
+
+          <div class="uptime-block">
+            <div class="uptime-header">
+              <strong>Uptime window</strong>
+              <small data-window-label>30 jours</small>
+            </div>
+
+            <div class="uptime-bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="incident-panel" data-node="incident">
+          <p class="incident-kicker">Timeline</p>
+          <h2 data-incident-title>Service stable</h2>
+          <p data-incident-copy>
+            Les checks sont actifs, les sauvegardes sont récentes, et aucun
+            incident client ne demande une action immédiate.
+          </p>
+
+          <div class="timeline">
+            <div>
+              <span></span>
+              <strong>Last backup</strong>
+              <small data-backup-time>03:10</small>
+            </div>
+
+            <div>
+              <span></span>
+              <strong>Last deploy</strong>
+              <small data-deploy-time>hier</small>
+            </div>
+
+            <div>
+              <span></span>
+              <strong>Alerts</strong>
+              <small data-alert-count>0 active</small>
+            </div>
+          </div>
+        </article>
+
+        <div class="ops-notes">
+          <div>
+            <span></span>
+            <strong>Monitoring</strong>
+            <small>checks réguliers</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Backups</strong>
+            <small>continuité simple</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Support</strong>
+            <small>intervention cadrée</small>
+          </div>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

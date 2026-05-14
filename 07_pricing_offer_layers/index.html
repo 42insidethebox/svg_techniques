@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07 — Pricing Offer Layers</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 07</p>
+        <h1>Pricing offer layers</h1>
+        <p>
+          A pricing visual that explains IOpartner as structured layers:
+          standard deployment, technical consulting, and systems work.
+          Not a SaaS table — a scope ladder.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="light">Light</button>
+          <button class="control" data-group="theme" data-theme="dark">Dark</button>
+
+          <button class="control is-active" data-group="focus" data-focus="standard">Standard</button>
+          <button class="control" data-group="focus" data-focus="consulting">Consulting</button>
+          <button class="control" data-group="focus" data-focus="systems">Systems</button>
+        </div>
+      </section>
+
+      <section class="pricing-panel" data-theme="light" data-focus="standard">
+        <div class="panel-label">
+          <strong>Offres structurées</strong>
+          <span>Standard · Consulting · Systems</span>
+        </div>
+
+        <svg class="pricing-routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 24 C27 8 73 8 92 26" />
+          <path class="ghost-route" d="M8 80 C27 94 73 94 92 78" />
+          <path class="ghost-route" d="M20 92 C31 66 52 42 80 16" />
+          <path class="ghost-route" d="M8 52 C24 38 46 34 64 39" />
+
+          <path class="stack-route route-standard" d="M31 30 H42 C47 30 48 36 53 36 H70" />
+          <path class="stack-route route-consulting" d="M29 50 H44 C49 50 50 50 55 50 H72" />
+          <path class="stack-route route-systems" d="M31 70 H42 C47 70 48 64 53 64 H70" />
+
+          <circle class="route-dot dot-standard-a" cx="31" cy="30" r="0.55" />
+          <circle class="route-dot dot-standard-b" cx="70" cy="36" r="0.55" />
+          <circle class="route-dot dot-consulting-a" cx="29" cy="50" r="0.55" />
+          <circle class="route-dot dot-consulting-b" cx="72" cy="50" r="0.55" />
+          <circle class="route-dot dot-systems-a" cx="31" cy="70" r="0.55" />
+          <circle class="route-dot dot-systems-b" cx="70" cy="64" r="0.55" />
+        </svg>
+
+        <div class="scope-axis">
+          <span>simple</span>
+          <strong>niveau de scope</strong>
+          <span>avancé</span>
+        </div>
+
+        <div class="layer-stack">
+          <article class="offer-layer layer-standard" data-layer="standard">
+            <div class="layer-copy">
+              <span class="layer-number">01</span>
+              <div>
+                <strong>Standard</strong>
+                <small>Déploiement rapide</small>
+              </div>
+            </div>
+
+            <div class="layer-sheet">
+              <span class="sheet-line sheet-title"></span>
+              <span class="sheet-line sheet-a"></span>
+              <span class="sheet-line sheet-b"></span>
+              <span class="sheet-chip">site clair</span>
+            </div>
+
+            <div class="layer-meta">
+              <strong>dès 999 CHF</strong>
+              <small>scope fixe</small>
+            </div>
+          </article>
+
+          <article class="offer-layer layer-consulting" data-layer="consulting">
+            <div class="layer-copy">
+              <span class="layer-number">02</span>
+              <div>
+                <strong>Consulting</strong>
+                <small>Arbitrage & cadrage</small>
+              </div>
+            </div>
+
+            <div class="layer-sheet">
+              <span class="sheet-line sheet-title"></span>
+              <span class="sheet-line sheet-a"></span>
+              <span class="sheet-line sheet-b"></span>
+              <span class="sheet-chip">décision</span>
+            </div>
+
+            <div class="layer-meta">
+              <strong>60 CHF / 15 min</strong>
+              <small>déblocage ciblé</small>
+            </div>
+          </article>
+
+          <article class="offer-layer layer-systems" data-layer="systems">
+            <div class="layer-copy">
+              <span class="layer-number">03</span>
+              <div>
+                <strong>Systems</strong>
+                <small>Architecture & opérations</small>
+              </div>
+            </div>
+
+            <div class="layer-sheet">
+              <span class="sheet-line sheet-title"></span>
+              <span class="sheet-line sheet-a"></span>
+              <span class="sheet-line sheet-b"></span>
+              <span class="sheet-chip">sur mesure</span>
+            </div>
+
+            <div class="layer-meta">
+              <strong>sur devis</strong>
+              <small>projet technique</small>
+            </div>
+          </article>
+        </div>
+
+        <aside class="pricing-card">
+          <p class="pricing-kicker">Lecture commerciale</p>
+          <h2 data-focus-title>Standard</h2>
+          <p data-focus-copy>
+            Pour un site professionnel clair, livré proprement, sans transformer
+            un besoin simple en projet logiciel.
+          </p>
+
+          <div class="pricing-signals">
+            <div>
+              <span></span>
+              <strong>Facturation suisse</strong>
+            </div>
+            <div>
+              <span></span>
+              <strong>Prix lisible</strong>
+            </div>
+            <div>
+              <span></span>
+              <strong>Scope assumé</strong>
+            </div>
+          </div>
+        </aside>
+
+        <div class="pricing-notes">
+          <div>
+            <span></span>
+            <strong>Standard</strong>
+            <small>quand le besoin est clair</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Consulting</strong>
+            <small>quand il faut décider</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Systems</strong>
+            <small>quand il faut construire</small>
+          </div>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

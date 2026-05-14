@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04 — Decision Entry Map</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 04</p>
+        <h1>Decision entry map</h1>
+        <p>
+          A service router for IOpartner: one client need, three possible entry
+          points, and a clear visual distinction between standard deployment,
+          consulting, and systems work.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="light">Light</button>
+          <button class="control" data-group="theme" data-theme="dark">Dark</button>
+
+          <button class="control is-active" data-group="recommendation" data-recommendation="consulting">
+            Consulting
+          </button>
+          <button class="control" data-group="recommendation" data-recommendation="standard">
+            Standard
+          </button>
+          <button class="control" data-group="recommendation" data-recommendation="systems">
+            Systems
+          </button>
+        </div>
+      </section>
+
+      <section class="decision-panel" data-theme="light" data-recommendation="consulting">
+        <div class="panel-label">
+          <strong>Décider le bon niveau d’intervention</strong>
+          <span>Standard · Consulting · Systems</span>
+        </div>
+
+        <svg class="decision-stage" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M7 23 C25 9 72 9 93 25" />
+          <path class="ghost-route" d="M8 80 C28 94 72 94 92 78" />
+          <path class="ghost-route" d="M20 92 C32 66 52 42 80 16" />
+          <path class="ghost-route" d="M7 51 C23 36 43 30 62 33" />
+
+          <g data-route-layer></g>
+        </svg>
+
+        <article class="decision-node need-node" data-node="need">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3a7 7 0 0 0-4 12.75V18h8v-2.25A7 7 0 0 0 12 3Z" />
+              <path d="M9 21h6" />
+              <path d="M9 18h6" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Besoin</strong>
+            <small>Quel niveau d’intervention ?</small>
+          </span>
+        </article>
+
+        <article class="decision-node filter-node" data-node="filter">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 6h16" />
+              <path d="M7 12h10" />
+              <path d="M10 18h4" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Cadrage</strong>
+            <small>Scope · risque · complexité</small>
+          </span>
+        </article>
+
+        <article class="path-card path-standard" data-node="standard" data-path="standard">
+          <span class="path-number">01</span>
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 5h16v14H4Z" />
+              <path d="M4 9h16" />
+              <path d="M8 13h8" />
+              <path d="M8 16h5" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Déploiement standard</strong>
+            <small>Site vitrine clair, rapide, cadré</small>
+          </span>
+          <span class="path-badge">dès 999 CHF</span>
+        </article>
+
+        <article class="path-card path-consulting" data-node="consulting" data-path="consulting">
+          <span class="path-number">02</span>
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 5h14v14H5Z" />
+              <path d="M8 9h8" />
+              <path d="M8 13h5" />
+              <path d="M8 17h7" />
+              <path d="M16 3v4" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Consulting technique</strong>
+            <small>Arbitrer, cadrer, débloquer</small>
+          </span>
+          <span class="path-badge">60 CHF / 15 min</span>
+        </article>
+
+        <article class="path-card path-systems" data-node="systems" data-path="systems">
+          <span class="path-number">03</span>
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 5h14v5H5Z" />
+              <path d="M5 14h14v5H5Z" />
+              <path d="M8 8h.01M8 17h.01" />
+              <path d="M11 8h5M11 17h5" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Systems & operations</strong>
+            <small>Architecture, infra, automatisation</small>
+          </span>
+          <span class="path-badge">sur devis</span>
+        </article>
+
+        <div class="decision-notes">
+          <div>
+            <span></span>
+            <strong>Standard</strong>
+            <small>quand le besoin est simple</small>
+          </div>
+          <div>
+            <span></span>
+            <strong>Consulting</strong>
+            <small>quand il faut décider</small>
+          </div>
+          <div>
+            <span></span>
+            <strong>Systems</strong>
+            <small>quand le site devient système</small>
+          </div>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

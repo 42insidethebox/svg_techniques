@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 — Extensions Module Stack</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 10</p>
+        <h1>Extensions module stack</h1>
+        <p>
+          A modular add-on visual for standard websites: WhatsApp, calendar
+          booking, forms, automations, analytics, and lightweight operational
+          extensions without making the base website feel bloated.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="light">Light</button>
+          <button class="control" data-group="theme" data-theme="dark">Dark</button>
+
+          <button class="control is-active" data-group="focus" data-focus="contact">Contact</button>
+          <button class="control" data-group="focus" data-focus="conversion">Conversion</button>
+          <button class="control" data-group="focus" data-focus="automation">Automation</button>
+          <button class="control" data-group="focus" data-focus="all">All</button>
+        </div>
+      </section>
+
+      <section class="extensions-panel" data-theme="light" data-focus="contact">
+        <div class="panel-label">
+          <strong>Extensions opérationnelles</strong>
+          <span data-focus-subtitle>Contact simple · rendez-vous · formulaire</span>
+        </div>
+
+        <svg class="extensions-stage" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 23 C26 9 72 9 92 25" />
+          <path class="ghost-route" d="M8 80 C28 94 72 94 92 78" />
+          <path class="ghost-route" d="M18 90 C31 64 51 42 78 17" />
+          <path class="ghost-route" d="M8 52 C24 38 45 34 63 38" />
+
+          <g data-route-layer></g>
+        </svg>
+
+        <article class="base-website" data-node="website">
+          <div class="website-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>Website</strong>
+          </div>
+
+          <div class="website-body">
+            <div>
+              <span class="line-kicker"></span>
+              <span class="line-title"></span>
+              <span class="line-title short"></span>
+              <span class="line-copy"></span>
+              <span class="line-copy medium"></span>
+            </div>
+
+            <div class="website-card">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="website-footer">
+            <span>Base claire</span>
+            <span>Scope contrôlé</span>
+          </div>
+        </article>
+
+        <article class="module-card module-whatsapp" data-node="whatsapp" data-module="whatsapp">
+          <span class="module-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 18.5 4 20l1-3.3A8 8 0 1 1 7 18.5Z" />
+              <path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01" />
+            </svg>
+          </span>
+          <span>
+            <strong>WhatsApp</strong>
+            <small>Contact direct</small>
+          </span>
+        </article>
+
+        <article class="module-card module-calendar" data-node="calendar" data-module="calendar">
+          <span class="module-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 5h14v15H5Z" />
+              <path d="M8 3v4M16 3v4M5 9h14" />
+              <path d="M8 13h3M13 13h3M8 16h3" />
+            </svg>
+          </span>
+          <span>
+            <strong>Calendly</strong>
+            <small>Rendez-vous</small>
+          </span>
+        </article>
+
+        <article class="module-card module-form" data-node="form" data-module="form">
+          <span class="module-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 4h12v16H6Z" />
+              <path d="M9 8h6M9 12h6M9 16h3" />
+            </svg>
+          </span>
+          <span>
+            <strong>Formulaire</strong>
+            <small>Demandes cadrées</small>
+          </span>
+        </article>
+
+        <article class="module-card module-automation" data-node="automation" data-module="automation">
+          <span class="module-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+              <path d="M18 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+              <path d="M6 20a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+              <path d="M7.7 7l8.6 4M8 6h4a3 3 0 0 1 3 3v2M18 14v2a3 3 0 0 1-3 3h-4" />
+            </svg>
+          </span>
+          <span>
+            <strong>Automation</strong>
+            <small>Workflow simple</small>
+          </span>
+        </article>
+
+        <article class="module-card module-analytics" data-node="analytics" data-module="analytics">
+          <span class="module-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 19V5" />
+              <path d="M5 19h14" />
+              <path d="M8 16v-4M12 16V8M16 16v-6" />
+            </svg>
+          </span>
+          <span>
+            <strong>Analytics</strong>
+            <small>Suivi léger</small>
+          </span>
+        </article>
+
+        <article class="module-card module-email" data-node="email" data-module="email">
+          <span class="module-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 6h16v12H4Z" />
+              <path d="m4 7 8 6 8-6" />
+            </svg>
+          </span>
+          <span>
+            <strong>Email</strong>
+            <small>Notification</small>
+          </span>
+        </article>
+
+        <aside class="extension-inspector" data-node="inspector">
+          <p class="inspector-kicker">Pack extension</p>
+          <h2 data-inspector-title>Contact</h2>
+          <p data-inspector-copy>
+            Ajoute les points de contact essentiels sans transformer le site en
+            plateforme complexe.
+          </p>
+
+          <div class="extension-list">
+            <div>
+              <span></span>
+              <strong data-line-a>WhatsApp</strong>
+            </div>
+            <div>
+              <span></span>
+              <strong data-line-b>Rendez-vous</strong>
+            </div>
+            <div>
+              <span></span>
+              <strong data-line-c>Formulaire</strong>
+            </div>
+          </div>
+        </aside>
+
+        <div class="extension-notes">
+          <div>
+            <span></span>
+            <strong>Modulaire</strong>
+            <small>seulement si utile</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Pas caché</strong>
+            <small>scope visible</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Léger</strong>
+            <small>pas un système lourd</small>
+          </div>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05 — Consulting Scope Artifact</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 05</p>
+        <h1>Consulting scope artifact</h1>
+        <p>
+          A visual artifact for technical consulting: messy input becomes scope,
+          constraints, options, recommendation, and a clean next step.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="light">Light</button>
+          <button class="control" data-group="theme" data-theme="dark">Dark</button>
+
+          <button class="control is-active" data-group="focus" data-focus="recommendation">
+            Recommandation
+          </button>
+          <button class="control" data-group="focus" data-focus="scope">Scope</button>
+          <button class="control" data-group="focus" data-focus="risk">Risque</button>
+        </div>
+      </section>
+
+      <section class="scope-panel" data-theme="light" data-focus="recommendation">
+        <div class="panel-label">
+          <strong>Artifact de cadrage technique</strong>
+          <span>Besoin · contraintes · options · recommandation</span>
+        </div>
+
+        <svg class="scope-stage" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 23 C26 9 72 9 92 25" />
+          <path class="ghost-route" d="M8 80 C28 94 72 94 92 78" />
+          <path class="ghost-route" d="M18 90 C31 64 51 42 78 17" />
+          <path class="ghost-route" d="M8 52 C24 38 45 34 63 38" />
+
+          <g data-route-layer></g>
+        </svg>
+
+        <div class="input-stack">
+          <article class="mini-card input-need" data-node="need">
+            <span class="mini-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3a7 7 0 0 0-4 12.75V18h8v-2.25A7 7 0 0 0 12 3Z" />
+                <path d="M9 21h6M9 18h6" />
+              </svg>
+            </span>
+            <span>
+              <strong>Besoin initial</strong>
+              <small>Question floue, urgence, blocage</small>
+            </span>
+          </article>
+
+          <article class="mini-card input-constraints" data-node="constraints">
+            <span class="mini-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 9v4" />
+                <path d="M12 17h.01" />
+                <path d="M10.3 4.2 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0Z" />
+              </svg>
+            </span>
+            <span>
+              <strong>Contraintes</strong>
+              <small>Budget, délai, outil, risque</small>
+            </span>
+          </article>
+
+          <article class="mini-card input-options" data-node="options">
+            <span class="mini-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 8h12" />
+                <path d="M6 12h8" />
+                <path d="M6 16h10" />
+                <path d="M4 8h.01M4 12h.01M4 16h.01" />
+              </svg>
+            </span>
+            <span>
+              <strong>Options</strong>
+              <small>Standard, sur mesure, attente</small>
+            </span>
+          </article>
+        </div>
+
+        <article class="scope-sheet" data-node="artifact">
+          <div class="sheet-header">
+            <span class="sheet-mark">IO</span>
+            <div>
+              <strong>Scope technique</strong>
+              <small>artifact consultatif · version courte</small>
+            </div>
+          </div>
+
+          <div class="sheet-grid">
+            <section class="sheet-block block-context">
+              <span>01</span>
+              <strong>Contexte</strong>
+              <small>Ce qui existe, ce qui manque, ce qui bloque.</small>
+            </section>
+
+            <section class="sheet-block block-risk">
+              <span>02</span>
+              <strong>Risque</strong>
+              <small>Points qui peuvent coûter cher si ignorés.</small>
+            </section>
+
+            <section class="sheet-block block-scope">
+              <span>03</span>
+              <strong>Scope</strong>
+              <small>Ce qui est inclus, exclu, et prioritaire.</small>
+            </section>
+
+            <section class="sheet-block block-recommendation">
+              <span>04</span>
+              <strong>Recommandation</strong>
+              <small>Le prochain mouvement défendable.</small>
+            </section>
+          </div>
+
+          <div class="mini-architecture">
+            <span class="arch-node">Site</span>
+            <span class="arch-node">DNS</span>
+            <span class="arch-node">CRM</span>
+            <span class="arch-node">Ops</span>
+            <svg viewBox="0 0 100 40" preserveAspectRatio="none">
+              <path d="M18 20 H38" />
+              <path d="M38 20 C50 8 62 8 74 20" />
+              <path d="M38 20 C50 32 62 32 74 20" />
+            </svg>
+          </div>
+
+          <div class="sheet-footer">
+            <span>Décision claire</span>
+            <span>Scope utile</span>
+            <span>Next step</span>
+          </div>
+        </article>
+
+        <div class="outcome-stack">
+          <article class="outcome-card outcome-recommendation" data-node="recommendation">
+            <span class="mini-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </span>
+            <span>
+              <strong>Recommandation</strong>
+              <small>Ce qu’il faut faire maintenant</small>
+            </span>
+            <em>priorité</em>
+          </article>
+
+          <article class="outcome-card outcome-next" data-node="next">
+            <span class="mini-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14" />
+                <path d="m13 6 6 6-6 6" />
+              </svg>
+            </span>
+            <span>
+              <strong>Next step</strong>
+              <small>Standard, consulting ou systems</small>
+            </span>
+          </article>
+        </div>
+
+        <div class="artifact-notes">
+          <div>
+            <span></span>
+            <strong>Carte de décision</strong>
+            <small>choix plus net</small>
+          </div>
+          <div>
+            <span></span>
+            <strong>Périmètre utile</strong>
+            <small>moins de flou</small>
+          </div>
+          <div>
+            <span></span>
+            <strong>Direction technique</strong>
+            <small>actionnable</small>
+          </div>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

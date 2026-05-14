@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11 — Trust Icon Set</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">IOpartner visual system · Artifact 11</p>
+        <h1>Trust icon set</h1>
+        <p>
+          A normalized SVG icon set for pricing, trust rows, proposal documents,
+          offer cards, and footer strips. Same viewBox, same stroke width, same
+          visual weight.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="light">Light</button>
+          <button class="control" data-group="theme" data-theme="dark">Dark</button>
+
+          <button class="control is-active" data-group="mode" data-mode="chips">Chips</button>
+          <button class="control" data-group="mode" data-mode="rows">Rows</button>
+          <button class="control" data-group="mode" data-mode="icons">Icons</button>
+        </div>
+      </section>
+
+      <section class="trust-panel" data-theme="light" data-mode="chips">
+        <div class="panel-label">
+          <strong>Signaux de confiance</strong>
+          <span>Facturation · paiement · livraison · prix · support</span>
+        </div>
+
+        <svg class="trust-background" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 23 C26 9 72 9 92 25" />
+          <path class="ghost-route" d="M8 80 C28 94 72 94 92 78" />
+          <path class="ghost-route" d="M18 90 C31 64 51 42 78 17" />
+          <path class="ghost-route" d="M8 52 C24 38 45 34 63 38" />
+        </svg>
+
+        <div class="trust-grid">
+          <article class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 3h10v18l-2-1.2L13 21l-2-1.2L9 21l-2-1.2Z" />
+                <path d="M9 8h6" />
+                <path d="M9 12h4" />
+                <path d="M15.5 11.5v5" />
+                <path d="M13 14h5" />
+              </svg>
+            </span>
+            <span class="trust-copy">
+              <strong>Facturation suisse</strong>
+              <small>Documents clairs, société locale</small>
+            </span>
+          </article>
+
+          <article class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 7h16v11H4Z" />
+                <path d="M4 10h16" />
+                <path d="M8 15h4" />
+                <path d="M17 14.5v2.5" />
+                <path d="M15.8 15.7 17 14.5l1.2 1.2" />
+              </svg>
+            </span>
+            <span class="trust-copy">
+              <strong>Paiement sécurisé</strong>
+              <small>Flux simple, traitement propre</small>
+            </span>
+          </article>
+
+          <article class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 16h9" />
+                <path d="M4 19h11" />
+                <path d="M7 13h5" />
+                <path d="M14 5l5 5-5 5" />
+                <path d="M19 10H9" />
+              </svg>
+            </span>
+            <span class="trust-copy">
+              <strong>Livraison rapide</strong>
+              <small>Scope court, exécution directe</small>
+            </span>
+          </article>
+
+          <article class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 7v6.5L11.5 21 20 12.5 13.5 6H7a3 3 0 0 0-3 1Z" />
+                <path d="M8.5 9.5h.01" />
+                <path d="M11 14h5" />
+                <path d="M11 17h3" />
+              </svg>
+            </span>
+            <span class="trust-copy">
+              <strong>Prix clair</strong>
+              <small>Offre lisible, périmètre assumé</small>
+            </span>
+          </article>
+
+          <article class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 13a7 7 0 0 1 14 0" />
+                <path d="M5 13v4a2 2 0 0 0 2 2h1v-6H5Z" />
+                <path d="M19 13v4a2 2 0 0 1-2 2h-1v-6h3Z" />
+                <path d="M12 19h3" />
+              </svg>
+            </span>
+            <span class="trust-copy">
+              <strong>Support local</strong>
+              <small>Contact humain, suivi technique</small>
+            </span>
+          </article>
+
+          <article class="trust-item">
+            <span class="trust-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 4h9l3 3v13H6Z" />
+                <path d="M14 4v4h4" />
+                <path d="M9 13h6" />
+                <path d="M9 16h4" />
+                <path d="m14 19 2 2 4-4" />
+              </svg>
+            </span>
+            <span class="trust-copy">
+              <strong>Passation propre</strong>
+              <small>Livrable compréhensible</small>
+            </span>
+          </article>
+        </div>
+
+        <div class="usage-strip">
+          <div>
+            <span></span>
+            <strong>24×24 SVG</strong>
+            <small>stroke 1.75</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Icon chip</strong>
+            <small>pricing cards</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Footer row</strong>
+            <small>dark compatible</small>
+          </div>
+        </div>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
