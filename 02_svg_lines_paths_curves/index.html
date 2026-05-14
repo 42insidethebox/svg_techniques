@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 — SVG Lines, Paths + Curves</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">SVG Techniques · Lesson 02</p>
+        <h1>SVG paths for operational architecture</h1>
+        <p>
+          Exact browser-calculated routes between system nodes. Switch between
+          curves, orthogonal paths, and straight lines to understand how SVG
+          route systems are built.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-route-mode="curve">Curves</button>
+          <button class="control" data-route-mode="orthogonal">Orthogonal</button>
+          <button class="control" data-route-mode="straight">Straight</button>
+        </div>
+      </section>
+
+      <section class="ops-panel" data-route-mode="curve">
+        <div class="panel-label">
+          <strong>Architecture opérationnelle</strong>
+          <span>Infra · backend · continuité</span>
+        </div>
+
+        <svg class="route-stage" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 23 C26 8 74 8 92 23" />
+          <path class="ghost-route" d="M10 78 C28 91 72 91 90 78" />
+          <path class="ghost-route" d="M18 88 C30 58 48 40 80 20" />
+          <path class="ghost-route" d="M12 48 C32 33 66 33 88 49" />
+
+          <g data-route-layer></g>
+        </svg>
+
+        <div class="system-node node-web" data-node="web">
+          <span class="system-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 5h16v14H4Z" />
+              <path d="M4 9h16" />
+              <path d="M7 7h.01M10 7h.01" />
+              <path d="M8 13h8M8 16h5" />
+            </svg>
+          </span>
+          <strong>Web</strong>
+          <small>Sites & contenus</small>
+        </div>
+
+        <div class="system-node node-api is-core" data-node="api">
+          <span class="system-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 8l-4 4l4 4" />
+              <path d="M16 8l4 4l-4 4" />
+              <path d="M14 5l-4 14" />
+            </svg>
+          </span>
+          <strong>API</strong>
+          <small>Routes métier</small>
+        </div>
+
+        <div class="system-node node-workers" data-node="workers">
+          <span class="system-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+              <path d="M18 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+              <path d="M6 20a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+              <path d="M7.7 7l8.6 4M8 6h4a3 3 0 0 1 3 3v2M18 14v2a3 3 0 0 1-3 3h-4" />
+            </svg>
+          </span>
+          <strong>Workers</strong>
+          <small>Jobs & workflows</small>
+        </div>
+
+        <div class="system-node node-data" data-node="data">
+          <span class="system-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 5c4.4 0 8 1.3 8 3s-3.6 3-8 3s-8-1.3-8-3s3.6-3 8-3Z" />
+              <path d="M4 8v8c0 1.7 3.6 3 8 3s8-1.3 8-3V8" />
+              <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+            </svg>
+          </span>
+          <strong>Data</strong>
+          <small>Sauvegardes</small>
+        </div>
+
+        <div class="system-node node-monitoring" data-node="monitoring">
+          <span class="system-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 13h4l2-6l4 11l2-5h4" />
+            </svg>
+          </span>
+          <strong>Monitoring</strong>
+          <small>Alertes & santé</small>
+        </div>
+
+        <div class="ops-rows">
+          <div>
+            <span></span>
+            <strong>DNS + SSL</strong>
+            <small>Routage propre</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Deploy</strong>
+            <small>Versionnement clair</small>
+          </div>
+
+          <div>
+            <span></span>
+            <strong>Watch</strong>
+            <small>Supervision active</small>
+          </div>
+        </div>
+
+        <div class="path-notes">
+          <code>M</code>
+          <code>L</code>
+          <code>H/V</code>
+          <code>C</code>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 — Premium Grid + Blueprint Arcs</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">SVG Techniques · Lesson 01</p>
+        <h1>Premium grid + soft blueprint arcs</h1>
+        <p>
+          A reusable browser-native visual pattern for technical websites:
+          subtle grid, SVG arcs, route dots, node cards, and restrained depth.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-theme="light">Light</button>
+          <button class="control" data-theme="dark">Dark</button>
+          <button class="control is-active" data-density="calm">Calm</button>
+          <button class="control" data-density="dense">Dense</button>
+        </div>
+      </section>
+
+      <section class="blueprint" data-theme="light" data-density="calm">
+        <svg class="routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <!-- Decorative blueprint atmosphere -->
+          <path class="route route-ghost" d="M15 23 C34 10 64 10 84 25" />
+          <path class="route route-ghost" d="M18 88 C35 72 58 66 84 75" />
+          <path class="route route-ghost" d="M30 92 C38 69 52 48 75 30" />
+          <path class="route route-ghost" d="M4 52 C21 33 36 24 52 20" />
+
+          <path class="route route-fragment" d="M14 33 H28" />
+          <path class="route route-fragment" d="M72 18 H87" />
+          <path class="route route-fragment" d="M74 84 H91" />
+          <path class="route route-fragment" d="M9 73 H22" />
+
+          <circle class="route-dot muted" cx="28" cy="38" r="0.55" />
+          <circle class="route-dot muted" cx="78" cy="34" r="0.55" />
+          <circle class="route-dot muted" cx="38" cy="69" r="0.55" />
+          <circle class="route-dot muted" cx="70" cy="61" r="0.55" />
+
+          <!-- JS writes exact node-to-API connectors here -->
+          <g data-route-layer></g>
+        </svg>
+
+        <div class="micro-label label-a">ROUTE / DNS</div>
+        <div class="micro-label label-b">API EDGE</div>
+        <div class="micro-label label-c">WATCH 48</div>
+        <div class="micro-label label-d">SSL / BACKUP</div>
+
+        <article class="node node-dns" data-node="dns">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18Z" />
+              <path d="M12 3c2.4 2.5 3.4 5.4 3.4 9S14.4 18.5 12 21" />
+              <path d="M12 3c-2.4 2.5-3.4 5.4-3.4 9s1 6.5 3.4 9" />
+              <path d="M3.6 9h16.8M3.6 15h16.8" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>DNS</strong>
+            <small>Domaine & routage</small>
+          </span>
+        </article>
+
+        <article class="node node-api is-core" data-node="api">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M8 8l-4 4l4 4" />
+              <path d="M16 8l4 4l-4 4" />
+              <path d="M14 5l-4 14" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>API</strong>
+            <small>Services métier</small>
+          </span>
+        </article>
+
+        <article class="node node-vps" data-node="vps">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 4h14v5H5Z" />
+              <path d="M5 15h14v5H5Z" />
+              <path d="M8 7h.01M8 18h.01" />
+              <path d="M11 7h5M11 18h5" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>VPS</strong>
+            <small>Hébergement</small>
+          </span>
+        </article>
+
+        <article class="node node-crm" data-node="crm">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 12a4 4 0 1 0-4-4a4 4 0 0 0 4 4Z" />
+              <path d="M5 20a7 7 0 0 1 14 0" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>CRM</strong>
+            <small>Données clients</small>
+          </span>
+        </article>
+
+        <article class="node node-monitoring" data-node="monitoring">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 13h4l2-6l4 11l2-5h4" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Monitoring</strong>
+            <small>Santé système</small>
+          </span>
+        </article>
+
+        <article class="node node-backup" data-node="backup">
+          <span class="node-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 5c4.4 0 8 1.3 8 3s-3.6 3-8 3s-8-1.3-8-3s3.6-3 8-3Z" />
+              <path d="M4 8v8c0 1.7 3.6 3 8 3s8-1.3 8-3V8" />
+              <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+            </svg>
+          </span>
+          <span class="node-copy">
+            <strong>Backup</strong>
+            <small>Sauvegardes</small>
+          </span>
+        </article>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

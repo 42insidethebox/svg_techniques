@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03 — Node Cards + Icon Chips</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="lesson-shell">
+      <section class="lesson-copy">
+        <p class="eyebrow">SVG Techniques · Lesson 03</p>
+        <h1>Reusable node cards + icon chips</h1>
+        <p>
+          A reusable node component system for technical websites: same shell,
+          same icon treatment, same spacing, different infrastructure concepts.
+        </p>
+
+        <div class="controls">
+          <button class="control is-active" data-group="theme" data-theme="dark">Dark</button>
+          <button class="control" data-group="theme" data-theme="light">Light</button>
+          <button class="control is-active" data-group="density" data-density="comfortable">Comfortable</button>
+          <button class="control" data-group="density" data-density="compact">Compact</button>
+        </div>
+      </section>
+
+      <section class="node-lab" data-theme="dark" data-density="comfortable">
+        <div class="lab-label">
+          <strong>Node component library</strong>
+          <span>DNS · API · VPS · CRM · Backup · Monitoring</span>
+        </div>
+
+        <svg class="lab-routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="ghost-route" d="M8 28 C26 12 72 12 92 30" />
+          <path class="ghost-route" d="M10 74 C30 90 70 90 90 74" />
+          <path class="ghost-route" d="M15 52 C34 38 64 37 84 52" />
+          <path class="ghost-route" d="M28 90 C37 66 54 43 78 20" />
+        </svg>
+
+        <div class="node-grid">
+          <article class="node-card is-active is-core" data-node="api">
+            <span class="node-chip">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 8l-4 4l4 4" />
+                <path d="M16 8l4 4l-4 4" />
+                <path d="M14 5l-4 14" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>API</strong>
+              <small>Routes métier</small>
+            </span>
+            <span class="node-badge">Core</span>
+          </article>
+
+          <article class="node-card" data-node="dns">
+            <span class="node-chip">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18Z" />
+                <path d="M12 3c2.4 2.5 3.4 5.4 3.4 9S14.4 18.5 12 21" />
+                <path d="M12 3c-2.4 2.5-3.4 5.4-3.4 9s1 6.5 3.4 9" />
+                <path d="M3.6 9h16.8M3.6 15h16.8" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>DNS</strong>
+              <small>Domaine & routage</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-node="vps">
+            <span class="node-chip">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 4h14v5H5Z" />
+                <path d="M5 15h14v5H5Z" />
+                <path d="M8 7h.01M8 18h.01" />
+                <path d="M11 7h5M11 18h5" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>VPS</strong>
+              <small>Hébergement</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-node="crm">
+            <span class="node-chip">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 12a4 4 0 1 0-4-4a4 4 0 0 0 4 4Z" />
+                <path d="M5 20a7 7 0 0 1 14 0" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>CRM</strong>
+              <small>Données clients</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-node="automation">
+            <span class="node-chip">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+                <path d="M18 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+                <path d="M6 20a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" />
+                <path d="M7.7 7l8.6 4M8 6h4a3 3 0 0 1 3 3v2M18 14v2a3 3 0 0 1-3 3h-4" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Automation</strong>
+              <small>Workflows métier</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-node="website">
+            <span class="node-chip">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 5h16v14H4Z" />
+                <path d="M4 9h16" />
+                <path d="M7 7h.01M10 7h.01" />
+                <path d="M8 13h8M8 16h5" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Website</strong>
+              <small>Site & contenu</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-node="backup">
+            <span class="node-chip">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 5c4.4 0 8 1.3 8 3s-3.6 3-8 3s-8-1.3-8-3s3.6-3 8-3Z" />
+                <path d="M4 8v8c0 1.7 3.6 3 8 3s8-1.3 8-3V8" />
+                <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Backup</strong>
+              <small>Sauvegardes</small>
+            </span>
+          </article>
+
+          <article class="node-card" data-node="monitoring">
+            <span class="node-chip">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 13h4l2-6l4 11l2-5h4" />
+              </svg>
+            </span>
+            <span class="node-copy">
+              <strong>Monitoring</strong>
+              <small>Alertes & santé</small>
+            </span>
+          </article>
+        </div>
+
+        <aside class="node-inspector">
+          <p class="inspector-kicker">Selected node</p>
+          <h2 data-selected-title>API</h2>
+          <p data-selected-description>
+            Core service node used as the central routing object in architecture diagrams.
+          </p>
+
+          <div class="token-list">
+            <div>
+              <span>Stroke</span>
+              <strong>1.75px</strong>
+            </div>
+            <div>
+              <span>Radius</span>
+              <strong>16px</strong>
+            </div>
+            <div>
+              <span>Icon</span>
+              <strong>24×24</strong>
+            </div>
+          </div>
+        </aside>
+
+        <span class="corner-mark corner-tl"></span>
+        <span class="corner-mark corner-tr"></span>
+        <span class="corner-mark corner-bl"></span>
+        <span class="corner-mark corner-br"></span>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
